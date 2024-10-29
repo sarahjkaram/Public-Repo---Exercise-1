@@ -54,7 +54,7 @@ print(cars_tibble)
 ## Step 3 
 
 # Sorted time from lowest to highest
-sorted_cars <- cars_tibble %>%
+sorted_cars_new <- cars_tibble %>%
   arrange(time)
 
 # Viewed the result with new times from lowest to highest
@@ -62,6 +62,7 @@ print(sorted_cars)
 
 # Added a column with the type of medal awarded based on times
 cars_tibble_tiers <- c %>%
+cars_tibble_tiers <- sorted_cars_new %>%
   mutate(
     time_tier = case_when(
       time >= 0 & time < 2 ~ "Gold",
