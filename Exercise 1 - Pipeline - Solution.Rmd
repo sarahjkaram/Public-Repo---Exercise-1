@@ -61,7 +61,7 @@ sorted_cars <- cars_tibble %>%
 print(sorted_cars)
 
 # Added a column with the type of medal awarded based on times
-cars_tibble_tiers <- cars_tibble %>%
+cars_tibble_tiers <- sorted_cars %>%
   mutate(
     time_tier = case_when(
       time >= 0 & time < 2 ~ "Gold",
