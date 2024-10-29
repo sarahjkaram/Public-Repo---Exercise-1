@@ -48,3 +48,28 @@ cars_tibble <- as_tibble(cars_with_time)
 print(cars_tibble) 
 
 ```
+
+
+```{r cars}
+## Step 3 
+
+# Sorted time from lowest to highest
+sorted_cars <- cars_tibble %>%
+  arrange(time)
+
+# Viewed the result with new times from lowest to highest
+print(sorted_cars)
+
+# Added a column with the type of medal awarded based on times
+cars_tibble_tiers <- cars_tibble %>%
+  mutate(
+    time_tier = case_when(
+      time >= 0 & time < 2 ~ "Gold",
+      time >= 2 & time < 4 ~ "Silver",
+      time >= 4 & time <= 6 ~ "Bronze"
+    )
+  )
+
+print(cars_tibble_tiers)
+
+```
