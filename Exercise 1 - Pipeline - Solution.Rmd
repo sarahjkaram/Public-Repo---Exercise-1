@@ -61,7 +61,6 @@ sorted_cars_new <- cars_tibble %>%
 print(sorted_cars)
 
 # Added a column with the type of medal awarded based on times
-cars_tibble_tiers <- c %>%
 cars_tibble_tiers <- sorted_cars_new %>%
   mutate(
     time_tier = case_when(
