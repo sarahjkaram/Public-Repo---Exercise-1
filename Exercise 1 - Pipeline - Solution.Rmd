@@ -58,7 +58,7 @@ sorted_cars_new <- cars_tibble %>%
   arrange(time)
 
 # Viewed the result with new times from lowest to highest
-print(sorted_cars)
+print(sorted_cars_new)
 
 # Added a column with the type of medal awarded based on times
 cars_tibble_tiers <- sorted_cars_new %>%
