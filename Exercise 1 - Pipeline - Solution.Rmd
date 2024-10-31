@@ -51,7 +51,7 @@ print(cars_tibble)
 
 
 ```{r cars}
-## Step 3 
+## Step 3 - Added 'new' to sorted_cars per my boss's request
 
 # Sorted time from lowest to highest
 sorted_cars_new <- cars_tibble %>%
