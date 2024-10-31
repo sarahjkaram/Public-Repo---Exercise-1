@@ -11,6 +11,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+#### Solution to Exercise 1 - Pipeline - Formative 
 ```{r cars}
 #### Solution to Exercise 1 - Pipeline - Formative 
 
@@ -49,7 +50,7 @@ print(cars_tibble)
 
 ```
 
-
+## Step 3
 ```{r cars}
 ## Step 3 - Added 'new' to sorted_cars per my boss's request
 
