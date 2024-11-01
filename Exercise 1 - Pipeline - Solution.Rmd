@@ -49,7 +49,7 @@ print(cars_tibble)
 ```
 
 ## Step 3
-```{r cars}
+```{r cars2}
 ## Step 3 - Added 'new' to sorted_cars per my boss's request
 
 # Sorted time from lowest to highest
